@@ -1,13 +1,6 @@
-# CSE264 Project 4: Making a Blackjack 21 Game using HTML/CSS/DOM
-## Due: Mon Nov 27 2023 at 11:59 PM
+# CSE264 Blackjack 21 Game using HTML/CSS/DOM
 
 ### Khushi Patel
-### kmp425@lehigh.edu
-### Video: https://drive.google.com/file/d/1OIa3hg4l_ib9j3707IOCtE2NdXJnyu8C/view?usp=sharing
-
-In this assignment, you will use HTML, CSS, and JavaScript on the Frontend to create a playable blackjack 21 game. You will also record win and losses to a MongoDB to be displayed on the frontend.
-
-All the code and packages you need is in this GitHub Classroom repo. Do not install any other packages (unless given permission by the instructor)
 
 ### REST API for Cards
 You will use the [Deck of Card API](http://deckofcardsapi.com/) as a way to create a Deck of Cards, take cards out of that deck, and manage the hands of the player and the dealer. It is a very simple API that provides images of cards, values, creating hands and decks, etc. The listed webpage has all the details on using the API. 
@@ -46,18 +39,6 @@ The flow of the game (events that need to take place) are as follows:
 * You must store each round of play in the MongoDB database (i.e. who won and what the winning hand is). You will then use this data to service the GET request that returns how many times the Dealer and the Player have won.
 * Your data model, schema, JSON structure, etc are yours to design and make. But you must comment and explain this in your code and your video.
 
-### Other considerations
-* You can write Raw HTML files instead if you wish. Just replace the pug files to an HTML file in the route.
-* You should not need to reload the page once it loads for the first time. Everything should be done by using JavaScript to change and update the DOM. Whem the game restarts, you chould clear the DOM to the start state of the game, and continue from there. Do not reload the webpage to play another game.
-* You can use Semantic UI, or any other CSS library if you wish. You can update these in the layout.pug file in the views directory. 
-* Some features in Semantic UI will require jQuery and SemanticUI.js. You can import these from cdnjs [https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js](https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js)
-* You should use regular JS to update and change the DOM, not jQuery. 
-* You can use any feature in Semantic UI (or similar CSS Library) that you would find useful.
-* You will need to make a 5-minute video describing your code and attach a link to it to this README.
-* You will need to find an image for the back of the cards of your deck. This can be anything you want. 
-* A simple example of CSS Animations using movements can be found [here](https://jsfiddle.net/h7tuehmo/3/)
-* More details on CSS animations can also be found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations) 
-
 ### Install and Run
 You must have node.js running on your machine. Once you have cloned this project you can run `npm install` to install all the packages for this project. Then running `npm run dev` will run the dev version of this code, which will run this project with nodemon. Nodemon auto-restarts the node server every time you make a change to a file. Very helpful when you are writing and testing code.
 
@@ -94,16 +75,5 @@ Then store your MongoDB URI connection in your  `.env` file.
 - In the new screen, select **Node.js** as Driver and version **5.5 or later**.
 - Finally, copy the URI connection string and replace the URI in MONGODB_URI of `.env`in your project directory (if you don't see it, create a copy of `.env.example` and name it as `.env`) with this URI string.  Make sure to replace the <PASSWORD> with the db User password that you created under the Security tab.
 - Note that after some of the steps in the Atlas UI, you may see a banner stating `We are deploying your changes`.  You will need to wait for the deployment to finish before using the DB in your application.
-
-
-
-### Grading
-* **70 Points** - Game plays correctly (with correct scores, win and loss states, etc)
-* **10 Points - Create a 5-minute video and include a link to it in this README that covers and explains how your code works. 
-* **15 Points** - Correctly records each round of the game in MongoDB and update score tally.
-* **5 Points** -  Code is well commented and easy to read/follow.
-* **BONUS 10 Points** - add animations to show cards moving from deck to player/dealer hands, animations to flip the card, 1 second delays on cards moving/flipping/updating
-
-* If code doesn't run/compile you can get no more than a 65, although this score can be much lower. But please write comments and a README to explain what you were trying to do. 
 
 
