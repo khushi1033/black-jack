@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  .container
+    .left-column(style='width: 20%;')
+      br
+      br
+      div#deal(class='tally')
+      div#play(class='tally')
+      br
+      br
+      img(src="https://i.pinimg.com/originals/40/66/44/40664440b9dcbf61bbd896b919c6b703.png")(style="height: 200px;")
+      br
+      br
+      br
+      br
+      .ui.green.button#hit(style="margin-bottom: 7px;")
+        | Hit
+      br
+      br
+      .ui.green.button#stay
+        | Stay
+    .middle-column(style='width: 60%;')
+      span#dealerCards(class='cards')
+      br
+      br
+      br
+      span#playerCards(class='cards')
+    .right-column(style='width: 20%;')
+      br
+      br
+      br
+      span#dealerScore(class='score') DEALER SCORE
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      span#playerScore(class='score') PLAYER SCORE
+      br
+
+  .ui.modal#startModal
+    div.modal-content Welcome to Blackjack
+    .ui.green.button.deal
+      | Deal
+    br
+
+  .ui.modal#winModal
+    div.modal-content You won!
+    br
+    .ui.green.button.deal
+      | Play Again
+    br
+
+  .ui.modal#loseModal
+    div.modal-content You Lost
+    br
+    .ui.green.button.deal
+      | Play Again
+    br
+
+  .ui.modal#tieModal
+    div.modal-content It's a Tie
+    br
+    .ui.green.button.deal
+      | Play Again
+    br
+
+
+

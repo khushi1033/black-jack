@@ -1,0 +1,60 @@
+
+
+.cards img {
+  display: inline;
+  height: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+.score {
+  padding-top: 500px;
+  font-family: 'Courier New', monospace;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+
+
+.ui.green.button.deal {
+  text-align: center;
+  display: block; 
+  margin-right: 10px; 
+  margin-left: 10px; 
+}
+
+.modal-content {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-column, .right-column, .middle-column {
+  font-family: 'Courier New', monospace;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #399700;
+  
+}
+
+
+
